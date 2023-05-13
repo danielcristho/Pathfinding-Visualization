@@ -1,11 +1,11 @@
-# tkinter-pacman
+# Tkinter-Pacman
 
-## Install reguirements
+## Install requirements
 
 ```bash
 python3 -m .venv
 source .venv/bin/activate # Linux
-venv\Scripts\activate # Windows
+.venv\Scripts\activate # Windows
 
-pip install -r reguirements.txt
+pip install -r requirements.txt
 ```
