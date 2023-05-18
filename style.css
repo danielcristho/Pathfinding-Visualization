@@ -46,6 +46,7 @@ body {
     padding-top: 2.5em;
     padding-bottom: 2.5em;
     letter-spacing: 0.5em;
+    user-select: none;
 }
 
 .prompt {
@@ -79,6 +80,7 @@ body {
   text-align: center;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+  user-select: none;
 }
 
 .options-child-image {
