@@ -2,7 +2,7 @@ var boxes = [];
 var start = 0;
 var end = 0;
 var cell_width = 0;
-var total_rows = 45;
+var total_rows = 35;
 var running = false;
 
 import PriorityQueue from "./PriorityQueue.js";
@@ -287,7 +287,6 @@ function reset() {
     let col = 0;
     for (let x = 0; x < width; x += cell_width) {
       boxes[row][col].make_default();
-      boxes[row][col].weighted = false;
       col += 1;
     }
     row += 1;
@@ -408,7 +407,6 @@ function make_all_barriers() {
     let col = 0;
     for (let x = 0; x < width; x += cell_width) {
       boxes[row][col].make_barrier();
-      boxes[row][col].weighted = false;
       col += 1;
     }
     row += 1;
@@ -462,21 +460,6 @@ async function DFS_Maze_generator(start, end) {
   }
   running = false;
   return;
-}
-
-function windowResized() {
-  var is_height = true;
-  if (windowWidth > windowHeight) {
-    is_height = true;
-    resizeCanvas(windowHeight, windowHeight);
-  } else {
-    is_height = false;
-    resizeCanvas(windowWidth, windowWidth);
-  }
-
-  if (is_height) {
-    cnv.position(windowWidth / 2 - windowHeight / 2);
-  }
 }
 
 window.setup = setup;
