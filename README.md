@@ -16,3 +16,5 @@ A project to fulfill Quiz 2 of Design and Analysis of Algorithms.
 - After you are done selecting start and end points, you may press "spacebar" to start the visualization of the path finding algorithm.
 - Press "R" to reset the whole grid i.e turn all cells white
 - Press "C" if you just want to clear the path that was created in an earlier execution. (This doesn't affect the barriers, weights, and start/end points.)
+
+### If the Dijkstra's Algorithm doesn't show up when run locally, try [here](https://pathfinding-visualization-beta.vercel.app/).
